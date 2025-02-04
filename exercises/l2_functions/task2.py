@@ -8,8 +8,6 @@
 
 
 # Do not change the below's code
-def join(str1, str2):
-    return f"{str1} {str2}"
 
 if __name__ == "__main__":
     a, b = "Jon", "Doe"
