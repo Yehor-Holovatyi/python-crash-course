@@ -2,9 +2,16 @@
 # of integers `l`.
 #
 # Return `None`, if list is empty
-def find_max(l: list[int]) -> int | None:
-    pass
-
+from typing import List, Union
+def find_max(l: List[int]) -> Union[int, None]:
+    if not l:
+        return None
+    
+    max_value = l[0]
+    for num in l:
+        if num > max_value:
+            max_value = num
+    return max_value
 
 # Do not change the below's code
 if __name__ == "__main__":
